@@ -1,0 +1,6 @@
+<h1>Delete Person</h1>
+<p>Are you sure you want to delete <%= person.name %>?</p>
+<form action="/person/<%= person._id %>?_method=DELETE" method="POST">
+  <button type="submit">Yes, Delete</button>
+  <a href="/person">Cancel</a>
+</form>

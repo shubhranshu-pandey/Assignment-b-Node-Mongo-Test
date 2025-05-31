@@ -1,0 +1,12 @@
+<h1><%= person._id ? 'Edit' : 'Add' %> Person</h1>
+<form action="<%= action %>" method="<%= method %>">
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= person.name || '' %>" required><br>
+  <label>Age:</label>
+  <input type="number" name="age" value="<%= person.age || '' %>" required><br>
+  <label>Gender:</label>
+  <input type="text" name="gender" value="<%= person.gender || '' %>" required><br>
+  <label>Mobile:</label>
+  <input type="text" name="mobile" value="<%= person.mobile || '' %>" required><br>
+  <button type="submit">Submit</button>
+</form>
